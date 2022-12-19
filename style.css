@@ -1,1 +1,116 @@
+@font-face {
+    font-family: 'ubuntuItalic';
+    src: url("assets/fonts/Ubuntu-Italic.ttf");
+    font-weight: 50;
+    border: 1px solid red;
+}
+@font-face {
+    font-family: 'ubuntuMdItalic';
+    src: url("assets/fonts/Ubuntu-MediumItalic.ttf");
+    font-weight: 200;
+    border: 1px solid red;
+}
 
+header {
+    border: 1px solid rgb(2, 0, 0);
+    background: #ffd30f;
+}
+main {
+    background: #ffffff6e;
+}
+footer {
+    border: 1px solid rgb(0, 0, 0);
+    background: #ffd30f;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.container {
+    max-width: 1448px;
+    margin: 0 auto;
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    transition: .5s;
+    cursor: default;
+}
+.section a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+a:hover {
+    background: #d88f066e;
+    color: rgb(255, 255, 255);
+}
+.section a:hover {
+    color: #00000088;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.body {
+    font-family: 'ubuntuMdItalic';
+    font-weight: bold;
+    min-height: 10vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section {
+    color: #ffffff;
+    background: #776b60;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    position: static;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+.infinite {
+    animation: black-white 0.9s infinite;
+}
+    @keyframes black-white {
+        0% {
+          color: black;
+        }
+    
+        50% {
+          color: white;
+        }
+        
+        100% {
+         color: black;
+         }
+      }
+.language-html {
+    font-size: 60%;
+    line-height: 0px;
+    white-space: nowrap;
+}
+.copyright {
+    text-align: right;
+    padding-right: 20px;
+}
